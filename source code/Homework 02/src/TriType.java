@@ -1,0 +1,4 @@
+
+enum TriType {
+    sin,cos
+}
