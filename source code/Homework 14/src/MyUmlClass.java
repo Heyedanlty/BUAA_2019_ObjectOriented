@@ -391,6 +391,12 @@ public class MyUmlClass {
         }        
         for (UmlInterfaceRealization ir : interRealList) {
             String interId = ir.getTarget();
+            MyUmlInter it = interMap.get(interId);
+            if (it.getUml009()) {
+                interReady = true;
+                uml009 = true;
+                return;
+            }
             if (inters.contains(interId)) {
                 interReady = true;
                 uml009 = true;
